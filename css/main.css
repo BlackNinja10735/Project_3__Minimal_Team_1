@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   width: 100%;
   padding-left: 16px;
@@ -19,5 +20,103 @@
   }
   .container-large {
     width: 1320px;
+  }
+}
+.our-сraftsmanship.adaptive {
+  min-width: 480px;
+}
+
+.our-сraftsmanshipp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-сraftsmanship {
+  background: #F7FAFF;
+}
+.our-сraftsmanship__image {
+  min-width: 480px;
+}
+.our-сraftsmanship__about-us {
+  display: flex;
+  align-items: center;
+  padding-left: 69px;
+}
+.our-сraftsmanship__about-us__line {
+  color: #0A224A;
+}
+.our-сraftsmanship__about-us__header {
+  color: #0A224A;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-left: 20px;
+}
+.our-сraftsmanship__header {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  text-transform: uppercase;
+  padding-left: 69px;
+}
+.our-сraftsmanship__subheader {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding-left: 69px;
+}
+.our-сraftsmanship__facts {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.our-сraftsmanship__facts__card {
+  display: flex;
+  flex-direction: column;
+}
+.our-сraftsmanship__facts__card--header {
+  color: #0A224A;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+.our-сraftsmanship__facts__card--subheader {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .our-сraftsmanship.adaptive {
+    max-width: 767px;
+  }
+  .our-сraftsmanship__facts {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .our-сraftsmanship.adaptive {
+    max-width: 704px;
+  }
+  .our-сraftsmanshipp {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .our-сraftsmanship.adaptive {
+    max-width: 1320px;
   }
 }
