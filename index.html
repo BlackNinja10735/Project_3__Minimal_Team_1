@@ -9,14 +9,166 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css"
+    />
     <link rel="stylesheet" href="css/main.css">
     <title>Minimal</title>
 </head>
 <body>
     <main>
         <section class="container container-large">
-            
+            <!-- our-products desktop -->
+            <h2 class="our-products-site__title our-products-site__title_tablet-mobile">OUR PRODUCTS</h2>
+            <article class="our-products__desktop">
+                <div class="our-products">
+                    <section class="our-products-site">
+                            <article class="our-products-site__object">
+                                <div class="our-products-site-box">
+                                    <div class="our-products-site-box-content">
+                                        <picture>
+                                            <source srcset="./images/shelf_1x.png 1x, ./images/shelf_2x.png 2x" media="(min-width: 480px)">
+                                            <img class="our-products-site-box-content__img" src="./images/shelf_1x.png" alt="shelf">
+                                        </picture>
+                                        <span class="our-products-site-box-content__info">Minimalist storage solutions</span>
+                                    </div>
+                                </div>
+    
+                                <div class="our-products-site-box our-products-site-box--invisible">
+                                    <div class="our-products-site-box-content">
+                                        <picture>
+                                            <source srcset="./images/sofa_1x.png 1x, ./images/sofa_2x.png 2x" media="(min-width: 480px)">
+                                            <img class="our-products-site-box-content__img" src="./images/sofa_1x.png" alt="sofa">
+                                        </picture>
+                                        <span class="our-products-site-box-content__info">Handcrafted minimalist seating</span>
+                                    </div>
+                                </div>
+    
+                                <div class="our-products-site-box our-products-site-box--douinvisible">
+                                    <div class="our-products-site-box-content">
+                                        <picture>
+                                            <source srcset="./images/table_1x.png 1x, ./images/table_2x.png 2x" media="(min-width: 480px)">
+                                            <img class="our-products-site-box-content__img" src="./images/table_1x.png" alt="shelf">
+                                        </picture>
+                                        <span class="our-products-site-box-content__info">Sleek and simple tables</span>
+                                    </div>
+                                </div>
+    
+                                <div class="our-products-site-box our-products-site-box--douinvisible">
+                                    <div class="our-products-site-box-content">
+                                        <picture>
+                                            <source srcset="./images/chair_1x.png 1x, ./images/chair_2x.png 2x" media="(min-width: 480px)">
+                                            <img class="our-products-site-box-content__img" src="./images/chair_1x.png" alt="shelf">
+                                        </picture>
+                                        <span class="our-products-site-box-content__info">Minimalist seating for every space</span>
+                                    </div>
+                                </div> 
+                            </article>
+                    </section>
+                </div>
+            </article>
+            <article style="display: flex; align-items: center; justify-content: center;">
+                <div class="multiple-items-mobile carousel carousel-mobile" style="width: 480px !important; padding: 0 !important;">
+                    <div class="photo">
+                        <picture>
+                            <source srcset="./images/shelf_1x.png 1x, ./images/shelf_2x.png 2x" media="(min-width: 480px)">
+                            <img class="our-products-site-box-content__img" src="./images/shelf_1x.png" alt="shelf">
+                        </picture>
+                        <span class="our-products-site-box-content__info">Minimalist storage solutions</span>
+                    </div>
+                    <div class="photo">
+                        <picture>
+                            <source srcset="./images/sofa_1x.png 1x, ./images/sofa_2x.png 2x" media="(min-width: 480px)">
+                            <img class="our-products-site-box-content__img" src="./images/sofa_1x.png" alt="sofa">
+                        </picture>
+                        <span class="our-products-site-box-content__info">Handcrafted minimalist seating</span>
+                    </div>
+                    <div class="photo">
+                        <picture>
+                            <source srcset="./images/table_1x.png 1x, ./images/table_2x.png 2x" media="(min-width: 480px)">
+                            <img class="our-products-site-box-content__img" src="./images/table_1x.png" alt="shelf">
+                        </picture>
+                        <span class="our-products-site-box-content__info">Sleek and simple tables</span>
+                    </div>
+                    <div class="photo">
+                        <picture>
+                            <source srcset="./images/chair_1x.png 1x, ./images/chair_2x.png 2x" media="(min-width: 480px)">
+                            <img class="our-products-site-box-content__img" src="./images/chair_1x.png" alt="shelf">
+                        </picture>
+                        <span class="our-products-site-box-content__info">Minimalist seating for every space</span>
+                    </div>
+                </div>
+            </article>
+            <article style="display: flex; align-items: center; justify-content: center;">
+                <div class="multiple-items carousel carousel-tablet" style="width: 768px !important; padding: 0 ;">
+                    <div class="photo">
+                        <picture>
+                            <source srcset="./images/shelf_1x.png 1x, ./images/shelf_2x.png 2x" media="(min-width: 480px)">
+                            <img class="our-products-site-box-content__img" src="./images/shelf_1x.png" alt="shelf">
+                        </picture>
+                        <span class="our-products-site-box-content__info">Minimalist storage solutions</span>
+                    </div>
+                    <div class="photo">
+                        <picture>
+                            <source srcset="./images/sofa_1x.png 1x, ./images/sofa_2x.png 2x" media="(min-width: 480px)">
+                            <img class="our-products-site-box-content__img" src="./images/sofa_1x.png" alt="sofa">
+                        </picture>
+                        <span class="our-products-site-box-content__info">Handcrafted minimalist seating</span>
+                    </div>
+                    <div class="photo">
+                        <picture>
+                            <source srcset="./images/table_1x.png 1x, ./images/table_2x.png 2x" media="(min-width: 480px)">
+                            <img class="our-products-site-box-content__img" src="./images/table_1x.png" alt="shelf">
+                        </picture>
+                        <span class="our-products-site-box-content__info">Sleek and simple tables</span>
+                    </div>
+                    <div class="photo">
+                        <picture>
+                            <source srcset="./images/chair_1x.png 1x, ./images/chair_2x.png 2x" media="(min-width: 480px)">
+                            <img class="our-products-site-box-content__img" src="./images/chair_1x.png" alt="shelf">
+                        </picture>
+                        <span class="our-products-site-box-content__info">Minimalist seating for every space</span>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
+
+    <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.js"
+          ></script>
+          <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"
+          ></script>
+          <script type="text/javascript">
+            $(document).ready(function () {
+              $(".multiple-items").slick({
+                infinite: true,
+                autoplay: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplaySpeed: 500
+              });
+            });
+
+            $(document).ready(function () {
+              $(".multiple-items-mobile").slick({
+                infinite: true,
+                autoplay: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplaySpeed: 500
+              });
+            });
+    </script>
 </body>
 </html>
