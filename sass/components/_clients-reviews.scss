@@ -1,0 +1,143 @@
+.clients-reviews{
+    background-color: $bg_section;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 36px;
+    
+    &__title{
+        @include title;
+        color: $main_color;
+        font-weight: bold;
+    }
+
+    &-site{
+        display: flex;
+        align-items: center;
+
+        &-box{
+
+            border-radius: 8px;
+            background-color: $white;
+            margin-right: 24px;
+
+            &_james{
+                display: none;
+            }
+
+            &_emily{
+                display: none;
+            }
+
+            &-object{
+                width: 251px;
+                height: 48px;
+                display: flex;
+                margin-top: 24px;
+                margin-left: 24px;
+
+                &__message{
+                    @extend %message;
+                    margin-left: 24px;
+                    padding: 15px;
+
+                    color: $main_color;
+                }
+
+                &__img{
+                    width: 48px;
+                    height: 48px;
+                    margin-right: 15px;
+                }
+
+                &-info{
+                    display: flex;
+                    flex-direction: column;
+                
+                    &__name{
+                        @include name_client;
+                        color: $main_color;
+                        margin-top: 0;
+                        margin-bottom: 2px;
+                        font-weight: bold;
+                    }
+
+                    &__date{
+                        font-family: "Roboto", sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                        color: $gray;
+                        margin-top: -10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $tablet){
+    .clients-reviews{
+    height: 466px;
+    padding: 0;
+
+    &-site{
+
+        &-box{
+            width: 344px;
+            height: 319px;
+
+            margin-right: 14px;
+
+            &_james{
+                display: block;
+            }
+
+            &-object{
+
+                &__message{
+                    @include text;
+                    width: 296px;
+                    height: 192px;
+                }
+            }
+        }
+    }
+}
+}
+
+@media (min-width: $desktop){
+    .clients-reviews{
+    height: 501px;
+    padding-bottom: 0;
+    padding-left: 24px;
+
+    &-site{
+
+        &-box{
+            width: 424px;
+            height: 306px;
+
+            &_james{
+                display: block;
+            }
+
+            &_emily{
+                display: block;
+            }
+
+            &-object{
+
+                &__message{
+                    width: 360px;
+                    height: 161px;
+                }
+            }
+        }
+    }
+}
+}
