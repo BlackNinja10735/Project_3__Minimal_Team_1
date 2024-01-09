@@ -15,7 +15,38 @@
 <body>
     <main>
         <section class="container container-large">
-            
+            <!-- NEWSLETTER -->
+            <article>
+                <section class="newsletter">
+                    <article class="newsletter-info">
+                        <div class="newsletter-description">
+                            <h2 class="newsletter-description__title"><b>NEWSLETTER</b></h2>
+                            <p class="newsletter-description__subtitle"><b>Every week we will send you new designs and information about sales.</b></p>
+                        </div>
+                            <div class="newsletter-input">
+                            <input class="newsletter-input__text newsletter-input__text-name" placeholder="Name" type="name" id="input-name">
+                            <input class="newsletter-input__text newsletter-input__text-email" placeholder="E-mail" type="email" id="input-email">
+                            </div>
+                        <div class="newsletter-content">
+                            <div class="newsletter-content-box">
+                                <input name="checkbox" id="checkbox" type="checkbox">
+                                    <label class="newsletter-content-box__check-text" for="checkbox" >Agree to subscribe to the newsletter</label>
+                            </div>
+                            <button class="newsletter-content__button">Send</button>
+                        </div>
+                    </article>
+                    <picture>
+                        <!-- desktop -->
+                        <source srcset="./images/newsletter_desktop_1x.png 1x, ./images/newsletter_desktop_2x.png 2x" media="(min-width: 1200px)">
+                        <!-- tablet -->
+                        <source srcset="./images/newsletter_tablet_1x.png 1x, ./images/newsletter_tablet_2x.png 2x" media="(min-width: 768px)">
+                        <!-- mobile -->
+                        <source srcset="./images/newsletter_mobile_1x.png 1x, ./images/newsletter_mobile_2x.png 2x" media="(max-width: 480px)">
+
+                        <img class="newsletter__img-newsletter" src="./images/newsletter_mobile_1x.png" alt="newsletter">
+                    </picture>
+                </section>
+            </article>
         </section>
     </main>
 </body>
